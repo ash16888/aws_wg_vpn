@@ -8,7 +8,7 @@ resource "aws_instance" "wg" {
   ami                    = data.aws_ami.ubuntu20_04.id
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.instance.id]
-  key_name               = "aws2"
+  key_name               = "tp"
   # user_data              = file("docker_flask.sh")
 
   tags = {
