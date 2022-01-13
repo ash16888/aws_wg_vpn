@@ -10,3 +10,7 @@ variable "security_group_name" {
   type        = string
   default     = "webserver"
 }
+
+variable "aws_access_key_id" {}
+
+variable "aws_secret_access_key" {}

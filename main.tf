@@ -43,10 +43,10 @@ resource "aws_security_group" "instance" {
 }
 
 
-terraform {
-  backend "s3" {
-    bucket = "ash16-terraform-state"
-    key    = "app/dev/terraform.tfstate"
-    region = "eu-central-1"
-  }
-}
+// terraform {
+//   backend "s3" {
+//     bucket = "ash16-terraform-state"
+//     key    = "app/dev/terraform.tfstate"
+//     region = "eu-central-1"
+//   }
+// }
