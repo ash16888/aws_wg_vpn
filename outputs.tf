@@ -1,10 +1,10 @@
 output "public_ip" {
-  value       = aws_instance.example.public_ip
+  value       = aws_instance.wg.public_ip
   description = "The public IP of the Instance"
 }
 
 output "public_dns" {
-  value       = aws_instance.example.public_dns
+  value       = aws_instance.wg.public_dns
   description = "The public DNS of the Instance"
 }
 
@@ -14,7 +14,7 @@ output "sg_id" {
 }
 
 output "availability_zone" {
-  value       = aws_instance.example.availability_zone
+  value       = aws_instance.wg.availability_zone
   description = "availability_zone"
 }
 
